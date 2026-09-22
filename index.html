@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Popokimon - Retro Pokédex</title>
+  <!-- Retro Pixel Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <div class="pokedex-case">
+    <!-- Top Lights -->
+    <div class="pokedex-header">
+      <div class="big-blue-light"></div>
+      <div class="small-lights">
+        <div class="dot red"></div>
+        <div class="dot yellow"></div>
+        <div class="dot green"></div>
+      </div>
+    </div>
+
+    <!-- Screen Section -->
+    <div class="screen-bezel">
+      <div class="lcd-screen">
+        <h1>POPOKIMON v1.0</h1>
+
+        <div class="controls">
+          <input type="text" id="searchInput" placeholder="SEARCH NAME/ID..." />
+          <select id="typeFilter">
+            <option value="all">ALL TYPES</option>
+            <option value="fire">FIRE</option>
+            <option value="water">WATER</option>
+            <option value="grass">GRASS</option>
+            <option value="electric">ELECTRIC</option>
+            <option value="psychic">PSYCHIC</option>
+            <option value="normal">NORMAL</option>
+          </select>
+        </div>
+
+        <div id="status" class="status-msg">INITIALIZING SYSTEM...</div>
+        <div class="grid" id="pokemonGrid"></div>
+      </div>
+    </div>
+
+    <!-- Bottom Arcade Hardware Controls -->
+    <div class="pokedex-bottom">
+      <div class="action-btns">
+        <div class="btn-circle btn-black"></div>
+        <div class="btn-circle btn-yellow"></div>
+      </div>
+      <div class="d-pad">
+        <div class="d-pad-btn d-pad-up"></div>
+        <div class="d-pad-btn d-pad-down"></div>
+        <div class="d-pad-btn d-pad-left"></div>
+        <div class="d-pad-btn d-pad-right"></div>
+        <div class="d-pad-btn d-pad-center"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
